@@ -60,7 +60,7 @@ z-index:10;
 cursor:pointer;
 padding:10px 20px;
 background:white;
-border-bottom: 1px solid grey;
+border-bottom: 1px solid rgb(210,210,210);
 
 &:hover {
     background: #B6B2FF
