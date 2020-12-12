@@ -1,0 +1,115 @@
+.second-section {
+    display: grid;
+    font-family: myfont;
+    padding-bottom: 30px;
+}
+
+.second-section-title {
+    font-size: 45px;
+    margin: auto;
+    padding: 70px 0 0 0;
+    border-bottom: 1px solid rgb(4, 0, 66);
+    color: #0a0041;
+}
+
+.second-section-description {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(94, 94, 94);
+    padding: 30px 0 60px 0;
+}
+
+.second-section-gridbox {
+    width: 50%;
+    margin: auto;
+    font-size: 20px;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+.second-section-box {
+    font-weight: bold;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgb(175, 175, 175);
+    padding-bottom: 60px;
+}
+
+.second-section-box img {
+    width: 100%;
+}
+
+.second-section-box-title{
+    padding: 30px;
+    font-size: 25px;
+    color: #0a0041;
+}
+.second-section-box-description {
+    font-size: 15px;
+    color: grey;
+    padding: 0 30px;
+}
+
+@media only screen and (max-width: 1919px) {
+    .second-section-gridbox {
+        width: 60%;
+     }
+}
+@media only screen and (max-width: 1599px) {
+    .second-section-gridbox {
+        width: 70%;
+     }
+}
+@media only screen and (max-width: 1371px) {
+    .second-section-gridbox {
+        width: 90%;
+     }
+}
+@media only screen and (max-width: 1066px) {
+    .second-section-gridbox {
+        grid-template-columns: 1fr;
+    }
+    .second-section-gridbox { 
+        width: 40%;
+    }
+    .second-section-description { 
+        width: 60%;
+        margin: auto;
+    }
+    .second-section-title { 
+        font-size: 35px;
+    } 
+}
+@media only screen and (max-width: 700px) {
+    .second-section-gridbox {
+        grid-template-columns: 1fr;
+    }
+    .second-section-gridbox { 
+        width: 60%;
+    }
+    .second-section-description { 
+        width: 60%;
+        margin: auto;
+    }
+    .second-section-title { 
+        font-size: 30px;
+        text-align: center;
+    } 
+}
+@media only screen and (max-width: 500px) {
+    .second-section-gridbox {
+        grid-template-columns: 1fr;
+    }
+    .second-section-gridbox { 
+        width: 80%;
+    }
+    .second-section-description { 
+        width: 60%;
+        margin: auto;
+    }
+    .second-section-title { 
+        font-size: 35px;
+    } 
+}
