@@ -1,8 +1,8 @@
 import React from 'react';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.svg'
 import '../css/first-section.css'
 import NavBar from '../components/NavBar'
-
+import Links from '../components/Links'
 
 function FirstSection() {
     return (
@@ -12,7 +12,9 @@ function FirstSection() {
                 <div className="first-section-text">
                     <span>Governance.</span>
                     <span>As a Service.</span>
-                    <span>Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem</span>
+                    <span>Effective solutions ensuring proper governance for blockchain
+                        projects of all sizes
+                    </span>
                     <div className="first-section-btn-box">
                         <button>Explore GaaS</button>
                         <button>Farm GDAO</button>
@@ -22,6 +24,7 @@ function FirstSection() {
                     <img src={logo} alt=""/>
                 </div>
             </div>
+            <Links />
         </section>
     )
 }
