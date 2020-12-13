@@ -23,7 +23,7 @@ function NavBar() {
                 <DropDownMenu title={'Resources'} item1={'Docs'} item2={'Forum'}/>
                 <DropDownMenu title={'Social'} item1={'Twitter'} item2={'Telegram'} item3={'Discord'}/>
             </ul>
-            <AiOutlineMenu className={menu ? "burger-menu active1" : "burger-menu"} onClick={showMenu}/>
+            <AiOutlineMenu className={menu ? "burger-menu active2" : "burger-menu"} onClick={showMenu}/>
         </nav>
     )
 }
