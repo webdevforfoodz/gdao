@@ -12,8 +12,8 @@ function NavBar() {
     }
 
     return (
-        <nav className="navbar" >
-            <div className={menu ? "navbar-logo active1" : "navbar-logo"}>
+        <nav className={menu ? "navbar active1" : "navbar"} >
+            <div className="navbar-logo">
                 <img src={logo} alt="navbar-logo" className={menu ? "navbar-logo-img" : ""}/>
                 <span className="navbar-logo-text">Governor DAO</span>
             </div>

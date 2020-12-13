@@ -1,16 +1,76 @@
 .first-section {
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
     background:url('../assets/texture.png'), linear-gradient(to bottom right,#060026, rgba(58, 52, 162,0.83)) ;
     font-family: 'Open Sans', sans-serif;
     position: relative;
 }
 
+/*-----------------------------------------*/
+
+.navbar {
+    position: relative;
+    top: 0%;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    color: whitesmoke;
+    font-family: myfont;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    padding: 1em 0 1em 2em;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+.navbar-logo img {
+    height: 100%;
+    align-self: center;
+}
+
+.navbar-ul {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 5%;
+    width: 50%;
+    padding-inline-start: 0;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 1em;
+} 
+
+.burger-menu {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    color: white;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    height: 100%;
+}
+
+/*-----------------------------------------*/
+
 .first-section-container {
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     width: 60%;
-    height: 85%;
+    height: calc(100vh - 150px);
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -87,63 +147,14 @@
 
 /*---------------------------------------------*/
 
-.navbar {
-    position: relative;
-    top: 0%;
-    left: 10px;
-    width: 100%;
-    color: whitesmoke;
-    font-family: myfont;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
-}
-
-.navbar-logo {
-    display: flex;
-    align-items: center;
-    padding: 1em 0 1em 1em;
-    transition: all 0.3s ease-in-out;
-}
-
-
-.navbar-ul {
-    display: flex;
-    justify-content: space-around;
-    margin-right: 5%;
-    width: 50%;
-    padding-inline-start: 0;
-    transition: all 0.3s ease-in-out;
-    position: relative;
-    z-index: 1;
-}
-
-.navbar-logo-text {
-    font-size: 25px;
-    font-weight: bold;
-    margin-left: 1em;
-}
-
-.burger-menu {
-    position: absolute;
-    right: 30px;
-    top: 30px;
-    color: white;
-    font-size: 30px;
-    display: none;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-}
-
-/*-----------------------------------------*/
-
 .first-section-links {
     position: relative;
-    bottom: 1%;
-    left: 50%;
-    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
     width: 100%;
+    height: 50px;
     text-align: center;
     padding-inline-start:0;
 }
@@ -152,14 +163,27 @@
 }
 
 @media only screen and (max-height: 1000px) {
-    .first-section-container { 
-        height: 80%;
-    }
     .first-section-text {
         font-size: 50px;
     }
     .first-section-text span:nth-child(3) { 
         font-size: 20px;
+    }
+}
+@media only screen and (max-height: 750px) {
+    .first-section-container {
+        align-items: flex-start;
+        padding-top: 10%;
+    }
+    .first-section-text {
+        font-size: 40px;
+    }
+    .first-section-text span:nth-child(3) { 
+        font-size: 15px;
+    }
+    .first-section-logo-wrapper {
+        margin-top: 0px;
+        margin-left: 200px;
     }
 }
 
@@ -186,9 +210,10 @@
     .navbar {
         width: 100%;
         left: 0;
-        top: 0px;
+        top: 0%;
         display: grid;
         z-index: 10;
+
     }
 
     .navbar-ul {
@@ -206,13 +231,8 @@
     }
 
     .active {
-        top: 92px;
+        top: 100px;
         left: 0;
-    }
-
-    .navbar-logo {
-        padding-top: 20px;
-        width: 100vw;
     }
 
     .navbar-logo-img {
@@ -257,10 +277,10 @@
         width: 90%;
     }
     .first-section-text {
-        font-size: 50px
+        font-size: 40px
     }
     .first-section-text span:nth-child(3) { 
-        font-size: 20px;
+        font-size: 15px;
         width: 70%;
     }
     .first-section-text span:nth-child(1), .first-section-text span:nth-child(2)    {
@@ -280,6 +300,10 @@
     }
     .first-section-logo-wrapper {
         margin-left: 200px;
+        margin-top: 0;
+    }
+    .first-section-logo-wrapper img { 
+        opacity: 0.05;
     }
     .first-section-links a:nth-child(2) {
         margin-left: 2em;
@@ -290,10 +314,28 @@
     .first-section-links a > img {
         transform: scale(0.7);
     }
+    .navbar-logo {
+        padding: 1em 0 1em 1em;
+    }
+    .navbar-logo-text {
+        font-size: 15px;
+    }
+    .navbar-logo img {
+        width: 30px;
+    }
+    .first-section-btn-box button {
+        font-size: 13px;
+    }
 }
 
 @media only screen and (max-width:450px) { 
-
+    .first-section-text {
+        font-size: 30px
+    }
+    .first-section-text span:nth-child(3) { 
+        font-size: 12px;
+        width: 70%;
+    }
     .first-section-links a:nth-child(2) {
         margin-left: -10px;
     }
