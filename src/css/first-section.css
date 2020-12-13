@@ -19,21 +19,18 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: all 0.3s ease-in-out;
 }
 
 .navbar-logo {
     display: flex;
     align-items: center;
     padding: 1em 0 1em 2em;
-    transition: all 0.3s ease-in-out;
     height: 100%;
 }
 
 .navbar-logo img {
     height: 100%;
     align-self: center;
-    transition: all 0.3s ease-in-out;
 }
 
 .navbar-ul {
