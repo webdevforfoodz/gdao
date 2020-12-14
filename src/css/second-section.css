@@ -9,6 +9,10 @@
     display: none;
 }
 
+.second-section-icon-wrapper {
+    display: none;
+}
+
 .second-section-title {
     display: grid;
 }
@@ -128,6 +132,9 @@
     }
 }
 @media only screen and (max-width:950px) {
+    .second-section-icon-wrapper {
+        display: block;
+    }
     .second-section-title span:nth-child(1) { 
         font-size: 30px;
     }
