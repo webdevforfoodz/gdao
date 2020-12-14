@@ -68,7 +68,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     width: 60%;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 160px);
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -152,7 +152,7 @@
     align-items: center;
     bottom: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     text-align: center;
     padding-inline-start:0;
 }
@@ -215,7 +215,7 @@
     }
 
     .navbar-ul {
-        flex-direction: column;
+        flex-direction: column;     
         min-width: 100vw;
         margin:0;
         color: #3f2e9e;
@@ -224,8 +224,8 @@
     }
 
     .non-active {
-        left: 0;
-        top: -500px;
+        left: -150%;
+        top: 100px;
     }
 
     .active {
