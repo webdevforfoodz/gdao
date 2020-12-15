@@ -1,5 +1,6 @@
 
 @font-face {
+    font-family: 'my font';
     src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet');
 }
 
@@ -7,7 +8,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'my font', sans-serif;
+    letter-spacing: 1px;
 }
 
 .App {

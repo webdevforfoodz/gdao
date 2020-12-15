@@ -1,8 +1,10 @@
 import React from 'react'
 import '../css/second-section.css'
 import earth from '../assets/earth.svg'
-import { FaBrain, FaDonate, FaHandHoldingUsd } from 'react-icons/fa'
-import { HiUserGroup } from 'react-icons/hi'
+import founder from '../assets/founder.svg'
+import holders from '../assets/holders.svg'
+import equity from '../assets/equity.svg'
+import ease from '../assets/ease.svg'
 
 
 function SecondSection() {
@@ -19,7 +21,7 @@ function SecondSection() {
             <div className="second-section-content">
                 <div className="second-section-content-box">
                     <div className="second-section-icon-wrapper">
-                        <FaBrain />
+                        <img src={founder} alt=""/>
                     </div>
                     <span className="second-section-content-box-title">
                         Reduced founder liability
@@ -32,10 +34,10 @@ function SecondSection() {
                 </div>
                 <div className="second-section-content-box">
                     <div className="second-section-icon-wrapper">
-                        <HiUserGroup />
+                    <img src={holders} alt=""/>
                     </div>
                     <span className="second-section-content-box-title">
-                        Aligned token holder interests 
+                        Aligned token holder interests
                     </span>
                     <span className="second-section-content-box-description">
                         Token holders benefit immediately from their good behavior, 
@@ -44,7 +46,7 @@ function SecondSection() {
                 </div>
                 <div className="second-section-content-box">
                     <div className="second-section-icon-wrapper">
-                        <FaDonate />
+                    <img src={equity} alt=""/>
                     </div>
                     <span className="second-section-content-box-title">
                         Equity retained from initial raise
@@ -56,7 +58,7 @@ function SecondSection() {
                 </div>
                 <div className="second-section-content-box">
                     <div className="second-section-icon-wrapper">
-                        <FaHandHoldingUsd />
+                    <img src={ease} alt=""/>
                     </div>
                     <span className="second-section-content-box-title">
                         Ease of contribution
