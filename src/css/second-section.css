@@ -1,6 +1,7 @@
 .second-section {
     padding: 5em 0;
     position: relative;
+    padding: 150px 0;
 }
 
 .second-section-bg {
@@ -19,6 +20,7 @@
 
 .second-section-title {
     display: grid;
+    padding-bottom: 50px;
 }
 
 .second-section-title span:nth-child(1) {
